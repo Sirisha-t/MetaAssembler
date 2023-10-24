@@ -20,9 +20,6 @@ const int gap_score = -1;
 const int GAP_PENALTY = 1; // gap penalty
 const int X_DROP_THRESHOLD = 50; // X-drop threshold
 
-//Protein overlap parameters
-//const int MAPLEN = 10;
-//const int MINHANG = 5;
 
 //DNA overlap parameters=
 int MAPLEN = 25;
