@@ -140,7 +140,7 @@ class MMSketch {
     MMSketch(char **seq, char** header, int* seqlen, uint32_t* seqid, int n, int kmer, int window,int& alpha, bool idx_flag);
     ~MMSketch(void);
     void PrintMinimizers(void);
-    void Map(int& kmer, int& window, int epsilon, int& id);
+    void FindSeedMatches(int& kmer, int& window, int epsilon, int& id);
     void Map(char* seq, int seqlen, char* header, uint32_t& seqid, int& kmer, int& window, int epsilon);
     void DumpAllMMIndex(const char *idx_file);
     void LoadMMIndexFile(const std::string& idxname);

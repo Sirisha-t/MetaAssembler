@@ -760,7 +760,7 @@ void MMSketch::Map(char* seq, int seqlen, char* header, uint32_t& seqid, int& km
 /*
 Mapping each query sequence to minimizer index hash table --overlap mode (read vs read)
 */
-void MMSketch::Map(int& kmer, int& window, int epsilon, int& id)
+void MMSketch::FindSeedMatches(int& kmer, int& window, int epsilon, int& id)
 {
     //std::cout<<"Map for query : "<<id<<"\n";
     std::vector <MMMatch> query_matches;
@@ -949,7 +949,6 @@ void MMSketch::Map(int& kmer, int& window, int epsilon, int& id)
                     MMOverlapInfo olap_info = MMOverlapInfo(qname,qstart,qend,tname,tstart,tend,orientation);
                     MMOverlaps.push_back({olap_info});
                     qmap[qid] = true;
-                    
                     
            }
         }
