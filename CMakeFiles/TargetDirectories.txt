@@ -1,0 +1,3 @@
+/home/tsirisha/Projects/Project2/MetaAssembler/CMakeFiles/mm_index.dir
+/home/tsirisha/Projects/Project2/MetaAssembler/CMakeFiles/edit_cache.dir
+/home/tsirisha/Projects/Project2/MetaAssembler/CMakeFiles/rebuild_cache.dir
